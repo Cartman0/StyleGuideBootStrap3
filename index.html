@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>BootstrapStyleGuid</title>
+
+  <!-- Bootstrap -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- cdn -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <link rel="stylesheet" href="css/original.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">BootstrapSyleGuide</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#sec-syoshiki-select">
+                <i class="glyphicon glyphicon glyphicon-pencil"></i> 書式指定系</a>
+            </li>
+            <li>
+              <a href="#sec-block">
+                <span class="glyphicon glyphicon-cog"></span> ブロック系</a>
+            </li>
+            <li>
+              <a href="#sec-css-navigation">
+                <span class="glyphicon glyphicon-cog"></span> CSSナビゲーション系</a>
+            </li>
+            <li>
+              <a href="#sec-web-icon">
+                <span class="glyphicon glyphicon-repeat"></span> Webアイコン系</a>
+            </li>
+            <li>
+              <a href="#sec-js-navigation">
+                <span class="glyphicon glyphicon-list-alt"></span> JSナビゲーション</a>
+            </li>
+
+            <!-- <li class="dropdown">
+              <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                <span class="glyphicon glyphicon-list-alt"></span>　パーツ
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-list-alt"></span> コンテンツの書式指定</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-list-alt"></span> CSSナビゲーション</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="glyphicon glyphicon-list-alt"></span> jsナビゲーション</a>
+                </li>
+                <li class="divider"></li>
+                <li class="dropdown-header">
+                  <span class="glyphicon glyphicon-list-alt"></span> その他</li>
+                <li class="dropdown-header">
+                  <span class="glyphicon glyphicon-list-alt"></span> 追加</li>
+                <li class="dropdown-header">
+                  <span class="glyphicon glyphicon-list-alt"></span> 補足・追記</li>
+              </ul>
+            </li> -->
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">ヘルプ</a></li>
+            <li><a href="#">お問い合わせ<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+        <!--/#navbar -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- jumbotron -->
+    <div class="jumbotron" id="header-jumbotron">
+      <div class="container">
+        <h1>BootStrap StyleGuide</h1>
+        <p>Bootstrap のスタイルガイドです。</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sec-syoshiki-select" data-toggle="tab">書式指定系</a></li>
+        <li><a href="#sec-block" data-toggle="tab">ブロック系</a></li>
+        <li><a href="#sec-css-navigation" data-toggle="tab">CSSナビゲーション系</a></li>
+        <li><a href="#sec-web-icon" data-toggle="tab">Webアイコン系</a></li>
+        <li><a href="#sec-js-navigation" data-toggle="tab">JSナビゲーション系</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <section class="tab-pane active" id="sec-syoshiki-select">
+          <h2>書式指定系</h2>
+          <section id="heading">
+            <h3>見出し</h3>
+            <div class="preview">
+              <h1 class="h1">ページの見出し、英名は「heading」。</h1>
+              <h1 class="h2">ページの見出し、英名は「heading」。</h1>
+              <h1 class="h3">ページの見出し、英名は「heading」。</h1>
+              <h1 class="h4">ページの見出し、英名は「heading」。</h1>
+              <h1 class="h5">ページの見出し、英名は「heading」。</h1>
+              <h1 class="h6">ページの見出し、英名は「heading」。</h1>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;h1 class=&quot;h1&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h2&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h3&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h4&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h5&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h6&quot;&gt;ページの見出し、英名は「heading」。&lt;/h1&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="secondary-text">
+            <h3>セカンダリテキスト</h3>
+            <div class="preview">
+              <h1 class="h1">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+              <h1 class="h2">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+              <h1 class="h3">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+              <h1 class="h4">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+              <h1 class="h5">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+              <h1 class="h6">ページの見出し、
+                <small>英名は「heading」。</small>
+              </h1>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;h1 class=&quot;h1&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h2&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h3&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h4&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h5&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+                <span>&lt;h1 class=&quot;h6&quot;&gt;ページの見出し、&lt;small&gt;英名は「heading」。&lt;/small&gt;&lt;/h1&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="text-align">
+            <h3>行揃え</h3>
+            <div class="preview">
+              <p class="text-left">左揃え</p>
+              <p class="text-center">中央揃え</p>
+              <p class="text-right">右揃え</p>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;p class=&quot;text-left&quot;&gt;左揃え&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-center&quot;&gt;中央揃え&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-right&quot;&gt;右揃え&lt;/p&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="text-color">
+            <h3>テキスト色</h3>
+            <div class="preview">
+              <p>◆ ノーマルテキスト色　黒色(#000)/<a href="*">ノーマルなテキストリンク色</a></p>
+              <p class="text-muted">◆テキストバリエーション色[muted]・・灰色(#777)/クラス名：text-muted（リンク色指定なし）</p>
+              <p class="text-primary">◆重要色[primary]・・青色(#428bca)/クラス名：<a href="*" class="text-primary">text-primary</a></p>
+              <p class="text-success">◆成功色[success]・・緑色(#5cb85c)/クラス名：<a href="text-success">text-success</a></p>
+              <p class="text-info">◆情報色[info]・・明度の低い青色(#5bc0de)/クラス名：<a href="*" class="text-info">text-info</a></p>
+              <p class="text-warning">◆警告色[warning]・・黄色(#fc18e3)/クラス名：<a href="*" class="text-warning">text-warning</a></p>
+              <p class="text-danger">◆危険色[danger]・・明度の低い赤色(#a94442)/クラス名：<a href="*" class="text-danger">text-danger</a></p>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;p&gt;◆ ノーマルテキスト色　黒色(#000)/&lt;a href=&quot;*&quot;&gt;ノーマルなテキストリンク色&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-muted&quot;&gt;◆テキストバリエーション色[muted]・・灰色(#777)/クラス名：text-muted（リンク色指定なし）&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-primary&quot;&gt;◆重要色[primary]・・青色(#428bca)/クラス名：&lt;a href=&quot;*&quot; class=&quot;text-primary&quot;&gt;text-primary&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-success&quot;&gt;◆成功色[success]・・緑色(#5cb85c)/クラス名：&lt;a href=&quot;text-success&quot;&gt;text-success&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-info&quot;&gt;◆情報色[info]・・明度の低い青色(#5bc0de)/クラス名：&lt;a href=&quot;*&quot; class=&quot;text-info&quot;&gt;text-info&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-warning&quot;&gt;◆警告色[warning]・・黄色(#fc18e3)/クラス名：&lt;a href=&quot;*&quot; class=&quot;text-warning&quot;&gt;text-warning&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;text-danger&quot;&gt;◆危険色[danger]・・明度の低い赤色(#a94442)/クラス名：&lt;a href=&quot;*&quot; class=&quot;text-danger&quot;&gt;text-danger&lt;/a&gt;&lt;/p&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="background-color">
+            <h3>背景色</h3>
+            <div class="preview">
+              <p class="bg-primary">◆重要色[primary]・・青色(#428bca)/クラス名：<a href="*" class="bg-primary">bg-primary</a></p>
+              <p class="bg-success">◆成功色[success]・・緑色(#5cb85c)/クラス名：<a href="bg-success">bg-success</a></p>
+              <p class="bg-info">◆情報色[info]・・明度の低い青色(#5bc0de)/クラス名：<a href="*" class="bg-info">bg-info</a></p>
+              <p class="bg-warning">◆警告色[warning]・・黄色(#fc18e3)/クラス名：<a href="*" class="bg-warning">bg-warning</a></p>
+              <p class="bg-danger">◆危険色[danger]・・明度の低い赤色(#a94442)/クラス名：<a href="*" class="bg-danger">bg-danger</a></p>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;p class=&quot;bg-primary&quot;&gt;◆重要色[primary]・・青色(#428bca)/クラス名：&lt;a href=&quot;*&quot; class=&quot;bg-primary&quot;&gt;bg-primary&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;bg-success&quot;&gt;◆成功色[success]・・緑色(#5cb85c)/クラス名：&lt;a href=&quot;bg-success&quot;&gt;bg-success&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;bg-info&quot;&gt;◆情報色[info]・・明度の低い青色(#5bc0de)/クラス名：&lt;a href=&quot;*&quot; class=&quot;bg-info&quot;&gt;bg-info&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;bg-warning&quot;&gt;◆警告色[warning]・・黄色(#fc18e3)/クラス名：&lt;a href=&quot;*&quot; class=&quot;bg-warning&quot;&gt;bg-warning&lt;/a&gt;&lt;/p&gt;</span>
+                <span>&lt;p class=&quot;bg-danger&quot;&gt;◆危険色[danger]・・明度の低い赤色(#a94442)/クラス名：&lt;a href=&quot;*&quot; class=&quot;bg-danger&quot;&gt;bg-danger&lt;/a&gt;&lt;/p&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="embed-img">
+            <h3>画像埋め込み</h3>
+            <div class="preview">
+              <img src="http://placehold.jp/300x300.png" alt="画像" class="img-responsive">
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;img src=&quot;&quot; alt=&quot;画像&quot; class=&quot;img-responsive&quot;&gt;</span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="embed-moive">
+            <h3>動画埋め込み</h3>
+            <div class="preview">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-items" width="560" height="315" src="https://www.youtube.com/embed/XmjG7W2pRUk" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-items" width="560" height="315" src="https://www.youtube.com/embed/XmjG7W2pRUk" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;</span>
+                    &lt;iframe class=&quot;embed-responsive-items&quot; src=&quot;https://www.youtube.com/embed/XXX &quot; &lt;/iframe&gt;
+                  &lt;/div&gt;
+                </span>
+                <span>
+                  &lt;div class=&quot;embed-responsive embed-responsive-4by3&quot;&gt;</span>
+                    &lt;iframe class=&quot;embed-responsive-items&quot; src=&quot;https://www.youtube.com/embed/XXX &quot; &lt;/iframe&gt;
+                  &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="list">
+            <h3>リスト</h3>
+            <div class="preview">
+              <ul class="list-unstyled">
+                <li>リスト項目</li>
+                <li>
+                  リスト項目
+                  <ul>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                    <li>リスト項目</li>
+                  </ul>
+                </li>
+                <li>リスト項目</li>
+                <li>リスト項目</li>
+                <li>リスト項目</li>
+              </ul>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;ul class=&quot;list-unstyled&quot;&gt;
+                    &lt;li&gt;リスト項目&lt;/li&gt;
+                    &lt;li&gt; リスト項目
+                    &lt;ul&gt;
+                      &lt;li&gt;リスト項目&lt;/li&gt;
+                      &lt;li&gt;リスト項目&lt;/li&gt;
+                      &lt;li&gt;リスト項目&lt;/li&gt;
+                      &lt;li&gt;リスト項目&lt;/li&gt;
+                      &lt;li&gt;リスト項目&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;リスト項目&lt;/li&gt;
+                    &lt;li&gt;リスト項目&lt;/li&gt;
+                    &lt;li&gt;リスト項目&lt;/li&gt;
+                  &lt;/ul&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="list-inline">
+            <h3>リストのインライン化（横に並べる）</h3>
+            <div class="preview">
+              <ul class="list-inline">
+                <li>東京本店</li>
+                <li>札幌本店</li>
+                <li>神奈川本店</li>
+                <li>名古屋本店</li>
+                <li>大阪本店</li>
+                <li>福岡本店</li>
+              </ul>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;ul class=&quot;list-inline&quot;&gt;
+                    &lt;li&gt;東京本店&lt;/li&gt;
+                    &lt;li&gt;札幌本店&lt;/li&gt;
+                    &lt;li&gt;神奈川本店&lt;/li&gt;
+                    &lt;li&gt;名古屋本店&lt;/li&gt;
+                    &lt;li&gt;大阪本店&lt;/li&gt;
+                    &lt;li&gt;福岡本店&lt;/li&gt;
+                  &lt;/ul&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="sec-table">
+            <h3>テーブル</h3>
+            <div class="preview">
+              <table class="table table-striped table-bordered table-hover table-condesed table-responsive">
+                <thead>
+                  <tr>
+                    <th>部屋No.</th>
+                    <th>部屋タイプ</th>
+                    <th>定員</th>
+                    <th>喫煙</th>
+                    <th>料金[円]</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>501</td>
+                    <td>ツイン</td>
+                    <td>2</td>
+                    <td>可</td>
+                    <td class="text-right">12,800</td>
+                  </tr>
+                  <tr>
+                    <td>502</td>
+                    <td>ツイン</td>
+                    <td>2</td>
+                    <td>不可</td>
+                    <td class="text-right">10,800</td>
+                  </tr>
+                  <tr>
+                    <td>601</td>
+                    <td>ツイン</td>
+                    <td>2</td>
+                    <td class="text-info">可</td>
+                    <td class="text-right">12,800</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>701</td>
+                    <td>ツイン</td>
+                    <td>2</td>
+                    <td>不可</td>
+                    <td class="text-right">20,800</td>
+                  </tr>
+                  <tr class="danger">
+                    <td>702</td>
+                    <td>ツイン</td>
+                    <td>2</td>
+                    <td>不可</td>
+                    <td class="text-right">20,800</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;table class=&quot;table table-striped table-bordered table-hover table-condesed table-responsive&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th&gt;部屋No.&lt;/th&gt;
+                        &lt;th&gt;部屋タイプ&lt;/th&gt;
+                        &lt;th&gt;定員&lt;/th&gt;
+                        &lt;th&gt;喫煙&lt;/th&gt;
+                        &lt;th&gt;料金[円]&lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;501&lt;/td&gt;
+                        &lt;td&gt;ツイン&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;可&lt;/td&gt;
+                        &lt;td class=&quot;text-right&quot;&gt;12,800&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;502&lt;/td&gt;
+                        &lt;td&gt;ツイン&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;不可&lt;/td&gt;
+                        &lt;td class=&quot;text-right&quot;&gt;10,800&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt;601&lt;/td&gt;
+                        &lt;td&gt;ツイン&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td class=&quot;text-info&quot;&gt;可&lt;/td&gt;
+                        &lt;td class=&quot;text-right&quot;&gt;12,800&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;warning&quot;&gt;
+                        &lt;td&gt;701&lt;/td&gt;
+                        &lt;td&gt;ツイン&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;不可&lt;/td&gt;
+                        &lt;td class=&quot;text-right&quot;&gt;20,800&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr class=&quot;danger&quot;&gt;
+                        &lt;td&gt;702&lt;/td&gt;
+                        &lt;td&gt;ツイン&lt;/td&gt;
+                        &lt;td&gt;2&lt;/td&gt;
+                        &lt;td&gt;不可&lt;/td&gt;
+                        &lt;td class=&quot;text-right&quot;&gt;20,800&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="sec-form">
+            <h3>フォーム基本</h3>
+            <div class="preview">
+              <form action="">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">メールアドレス</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="メールアドレス" require>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">パスワード</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="パスワード" require>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">ログイン状態を維持する
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-default">ログイン</button>
+              </form>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;form action=&quot;&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                      &lt;label for=&quot;exampleInputEmail1&quot;&gt;メールアドレス&lt;/label&gt;
+                      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;メールアドレス&quot; require&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                      &lt;label for=&quot;exampleInputPassword1&quot;&gt;パスワード&lt;/label&gt;
+                      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;パスワード&quot; require&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;checkbox&quot;&gt;
+                      &lt;label&gt;
+                        &lt;input type=&quot;checkbox&quot;&gt;ログイン状態を維持する
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;ログイン&lt;/button&gt;
+                  &lt;/form&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section id="sec-form-size">
+            <h3>フォームサイズ指定</h3>
+            <div class="preview">
+              <input type="text" class="form-control input-lg" placeholder=".input-lg">
+              <input type="text" class="form-control" placeholder="Default input">
+              <input type="text" class="form-control input-sm" placeholder=".input-sm">
+
+              <div class="row">
+                <div class="col-xs-2">
+                  <input type="text" class="form-control" placeholder=".col-xs-2">
+                </div>
+                <div class="col-xs-3">
+                  <input type="text" class="form-control" placeholder=".col-xs-3">
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control" placeholder=".col-xs-4">
+                </div>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>&lt;input type=&quot;text&quot; class=&quot;form-control input-lg&quot; placeholder=&quot;.input-lg&quot;&gt;</span>
+                <span>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Default input&quot;&gt;</span>
+                <span>&lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot; placeholder=&quot;.input-sm&quot;&gt;</span>
+                <span>
+                &lt;div class=&quot;row&quot;&gt;
+                  &lt;div class=&quot;col-xs-2&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-2&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;col-xs-3&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-3&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;col-xs-4&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;.col-xs-4&quot;&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+        <section class="tab-pane" id="sec-block">
+          <h2>ブロック系</h2>
+
+          <section class="sec-child" id="jumbotron">
+            <h3>ジャンボトロン</h3>
+            <div class="preview">
+              <div class="jumbotron">
+                <div class="container">
+                  <h1>Bootstrapgeek.biz</h1>
+                  <p>Bootstrapgeek.bizは、Webデザイナー、WebディレクターのためのTips&学習サイトです。</p>
+                  <p><a href="" class="btn btn-danger btn-lg">3分でわかる<br>bootstrapマスター講座</a></p>
+                </div>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;div class=&quot;jumbotron&quot;&gt;
+                    &lt;div class=&quot;container&quot;&gt;
+                      &lt;h1&gt;Bootstrapgeek.biz&lt;/h1&gt;
+                      &lt;p&gt;Bootstrapgeek.bizは、Webデザイナー、WebディレクターのためのTips&amp;学習サイトです。&lt;/p&gt;
+                      &lt;p&gt;&lt;a href=&quot;&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;3分でわかる&lt;br&gt;bootstrapマスター講座&lt;/a&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section class="sec-child" id="well">
+            <h3>囲み記事</h3>
+            <div class="preview">
+              <div class="well well-lg">
+                <h4>wellの使用方法 ※&lt;p&gt;にも使える</h4>
+                <p>特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、"well"は、bootstrap用語です。</p>
+              </div>
+              <div class="well">
+                <h4>wellの使用方法 ※&lt;p&gt;にも使える</h4>
+                <p>特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、"well"は、bootstrap用語です。</p>
+              </div>
+              <div class="well well-sm">
+                <h4>wellの使用方法 ※&lt;p&gt;にも使える</h4>
+                <p>特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、"well"は、bootstrap用語です。</p>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;div class=&quot;well well-lg&quot;&gt;
+                    &lt;h4&gt;wellの使用方法 ※&amplt;p&ampgt;にも使える&lt;/h4&gt;
+                    &lt;p&gt;特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、&quot;well&quot;は、bootstrap用語です。&lt;/p&gt;
+                  &lt;/div&gt;
+                </span>
+                <span>
+                  &lt;div class=&quot;well&quot;&gt;
+                    &lt;h4&gt;wellの使用方法 ※&amplt;p&ampgt;にも使える&lt;/h4&gt;
+                    &lt;p&gt;特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、&quot;well&quot;は、bootstrap用語です。&lt;/p&gt;
+                  &lt;/div&gt;
+                </span>
+                <span>
+                  &lt;div class=&quot;well well-sm&quot;&gt; &lt;h4&gt;wellの使用方法 ※&amplt;p&ampgt;にも使える&lt;/h4&gt; &lt;p&gt;特に注目させたいコンテンツやコラムなどに使用します。なお、HTML要素ではなく、&quot;well&quot;は、bootstrap用語です。&lt;/p&gt; &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section class="sec-child" id="thumbnail">
+            <h3>サムネール</h3>
+            <div class="preview">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="thumbnail">
+                    <img src="http://placehold.jp/150x150.png" class="img-responsive" alt="西洋の城">
+                    <div class="caption">
+                      <h3>西洋の城</h3>
+                      <p>
+                        軍事的な要塞もしくは貴族の住家として、中世に建てられた城が今でも数多く現存しています。 その中にはホテルとして利用されている城もあり、場内を見学するだけでなく、宿泊や食事を楽しめる場合もあります。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="thumbnail">
+                    <img src="http://placehold.jp/150x150.png" class="img-responsive" alt="日本の城">
+                    <div class="caption">
+                      <h3>日本の城</h3>
+                      <p>
+                        大名や藩主の住居であり、政治的、軍事的な拠点としての役割を果たしてきた日本の城は、 その多くが戦争、火災、天災により失われています。天守閣が当時のまま現存している城は 数えるほどしかありません。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- div.row -->
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-xs-12 col-sm-6&quot;&gt;
+                      &lt;div class=&quot;thumbnail&quot;&gt;
+                        &lt;img src=&quot;http://placehold.jp/150x150.png&quot; class=&quot;img-responsive&quot; alt=&quot;西洋の城&quot;&gt;
+                        &lt;div class=&quot;caption&quot;&gt;
+                          &lt;h3&gt;西洋の城&lt;/h3&gt;
+                          &lt;p&gt;
+                            軍事的な要塞もしくは貴族の住家として、中世に建てられた城が今でも数多く現存しています。
+                            その中にはホテルとして利用されている城もあり、場内を見学するだけでなく、宿泊や食事を楽しめる場合もあります。
+                          &lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-xs-12 col-sm-6&quot;&gt;
+                      &lt;div class=&quot;thumbnail&quot;&gt;
+                        &lt;img src=&quot;http://placehold.jp/150x150.png&quot; class=&quot;img-responsive&quot; alt=&quot;日本の城&quot;&gt;
+                        &lt;div class=&quot;caption&quot;&gt;
+                          &lt;h3&gt;日本の城&lt;/h3&gt;
+                          &lt;p&gt;
+                            大名や藩主の住居であり、政治的、軍事的な拠点としての役割を果たしてきた日本の城は、
+                            その多くが戦争、火災、天災により失われています。
+                            天守閣が当時のまま現存している城は 数えるほどしかありません。
+                          &lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section class="sec-child" id="">
+            <h3></h3>
+            <div class="preview">
+
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+
+                </span>
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+        <section class="tab-pane" id="sec-css-navigation">
+          <h2>CSSナビゲーション系</h2>
+        </section>
+
+        <section class="tab-pane" id="sec-web-icon">
+          <h2>Webアイコン系</h2>
+        </section>
+
+        <section class="tab-pane" id="sec-js-navigation">
+          <h2>JSナビゲーション系</h2>
+        </section>
+      </div>
+      <!-- div.tab-content -->
+    </div>
+    <!-- container -->
+  </main>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed
+    <script src="js/bootstrap.min.js"></script>
+    -->
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/jquery_nav_click.js"></script>
+</body>
+
+</html>
