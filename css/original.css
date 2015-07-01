@@ -1,17 +1,17 @@
-.navbar.navbar-default.navbar-fixed-top {
+.navbar {
   height: 7rem;
 }
 .container {
   padding: 1rem;
 }
-#header-jumbotron {
+.header-jumbotron {
   background-image: url('../img/Boostrap_logo.svg');
    background-size: contain;
-   background-position: 85% 0%;
+   background-position: 85% 0;
    background-repeat: no-repeat;
    margin-top: 5.5%;
 }
-.nav.nav-tabs {
+.nav-tabs {
   margin-bottom: 1rem;
 }
 section {
@@ -24,9 +24,19 @@ section section {
   padding: 1rem;
   margin: 1rem;
 }
-section.tab-pane {
+.tab-pane {
   padding-top: 7rem;
   margin-top: -7rem;
+}
+
+.sec-glyphicon ul li{
+  text-align: center;
+}
+.sec-glyphicon ul li span{
+  font-size: 2rem;
+}
+.sec-glyphicon ul li code{
+  word-break: normal; 
 }
 
 /* label */
