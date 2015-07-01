@@ -5,10 +5,7 @@
   padding: 1rem;
 }
 #header-jumbotron {
-  /*width: 100%;*/
-	/*height: 500px;*/
   background-image: url('../img/Boostrap_logo.svg');
-  /*background-size: cover;*/
    background-size: contain;
    background-position: 85% 0%;
    background-repeat: no-repeat;
