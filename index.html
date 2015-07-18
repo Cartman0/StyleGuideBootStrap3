@@ -3213,6 +3213,256 @@
 
         <section class="tab-pane" id="sec-js-navigation">
           <h2>JSナビゲーション系</h2>
+          <section class="sec-child" id="sec-dropdown">
+            <h3>ドロップダウン</h3>
+            <div class="preview">
+              <div class="container">
+                <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                      親メニュー
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=""><span class="glyphicon glyphicon-list-alt"></span> 小メニュー</a></li>
+                      <li><a href=""><span class="glyphicon glyphicon-list-alt"></span> 小メニュー</a></li>
+                      <li><a href=""><span class="glyphicon glyphicon-list-alt"></span> 小メニュー</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">
+                        <span class="glyphicon glyphicon-list-alt"></span> 小メニューdisabled
+                      </li>
+                      <li class="dropdown-header">
+                        <span class="glyphicon glyphicon-list-alt"></span> 小メニューdisabled
+                      </li>
+                      <li class="dropdown-header">
+                        <span class="glyphicon glyphicon-list-alt"></span> 小メニューdisabled
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                      &lt;a href=&quot;&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;
+                        &lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt;
+                        親メニュー
+                        &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニュー&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニュー&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニュー&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+                        &lt;li class=&quot;dropdown-header&quot;&gt;
+                          &lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニューdisabled
+                        &lt;/li&gt;
+                        &lt;li class=&quot;dropdown-header&quot;&gt;
+                          &lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニューdisabled
+                        &lt;/li&gt;
+                        &lt;li class=&quot;dropdown-header&quot;&gt;
+                          &lt;span class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/span&gt; 小メニューdisabled
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section class="sec-child" id="sec-modal">
+            <h3>モーダルダイアログ</h3>
+            <div class="preview">
+              <button class="btn btn-primary" data-target="#holiday-oct" data-toggle="modal">今月の休業日</button>
+              <div class="modal fade" id="holiday-oct">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">閉じる</span>
+                      </button>
+                      <h4 class="modal-title">2015年8月の休業日</h4>
+                      <div class="modal-body">
+                        8月の定休日は、<br>
+                        <b>2日、9日、16日、23日、30日</b>
+                        （毎週木曜日）<br>
+                        また、店舗改装のため、<b>8月13～15日</b>は臨時休業させていただきます。<br>
+                        皆様にはご迷惑おかけしますが、何卒よろしくお願いします。
+                      </div>
+                      <div class="modal-footer">
+                        <p>boot dining 渋谷店</p>
+                        <button class="btn btn-primary btn-sm" data-dismiss="modal">閉じる</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;button class=&quot;btn btn-primary&quot; data-target=&quot;#holiday-oct&quot; data-toggle=&quot;modal&quot;&gt;今月の休業日&lt;/button&gt;
+                </span>
+                <span>
+                  &lt;div class=&quot;modal fade&quot; id=&quot;holiday-oct&quot;&gt;
+                    &lt;div class=&quot;modal-dialog&quot;&gt;
+                      &lt;div class=&quot;modal-content&quot;&gt;
+                        &lt;div class=&quot;modal-header&quot;&gt;
+                          &lt;button class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;
+                            &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+                            &lt;span class=&quot;sr-only&quot;&gt;閉じる&lt;/span&gt;
+                          &lt;/button&gt;
+                          &lt;h4 class=&quot;modal-title&quot;&gt;2015年8月の休業日&lt;/h4&gt;
+                          &lt;div class=&quot;modal-body&quot;&gt;
+                            8月の定休日は、&lt;br&gt;
+                            &lt;b&gt;2日、9日、16日、23日、30日&lt;/b&gt;
+                            （毎週木曜日）&lt;br&gt;
+                            また、店舗改装のため、&lt;b&gt;8月13～15日&lt;/b&gt;は臨時休業させていただきます。&lt;br&gt;
+                            皆様にはご迷惑おかけしますが、何卒よろしくお願いします。
+                          &lt;/div&gt;
+                          &lt;div class=&quot;modal-footer&quot;&gt;
+                            &lt;p&gt;boot dining 渋谷店&lt;/p&gt;
+                            &lt;button class=&quot;btn btn-primary btn-sm&quot; data-dismiss=&quot;modal&quot;&gt;閉じる&lt;/button&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
+          <section class="sec-child" id="sec-carousel">
+            <h3>カルーセル</h3>
+            <div class="preview">
+              <div id="c1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#c1" data-slide-to="0" class="acrive"></li>
+                  <li data-target="#c1" data-slide-to="1"></li>
+                  <li data-target="#c1" data-slide-to="2"></li>
+                  <li data-target="#c1" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <!-- 1枚目のスライド -->
+                  <div class="item active">
+                    <a href="http://getbootstrap.com/">
+                      <img src="img/getbootstrap.jpg" alt="">
+                      <div class="carousel-caption" style="background-color: rgba(50,50,50,0.7);">
+                         <h2>Bootstrap</h2><p>Bootstrapの解説サイト</p>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 2枚目のスライド -->
+                  <div class="item">
+                    <a href="http://getbootstrap.com/css/">
+                      <img src="img/getbootstrap_css.jpg" alt="">
+                      <div class="carousel-caption" style="background-color: rgba(50,50,50,0.7);">
+                        <h2>CSS</h2><p>CSSについて解説したページ</p>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 3枚目のスライド -->
+                  <div class="item">
+                    <a href="http://getbootstrap.com/components/">
+                      <img src="img/getbootstrap_components.jpg" alt="">
+                      <div class="carousel-caption" style="background-color: rgba(50,50,50,0.7);">
+                        <h2>Components</h2><p>コンポーネントを解説したページ</p>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- 4枚目のスライド -->
+                  <div class="item">
+                    <a href="http://getbootstrap.com/javascript/">
+                      <img src="img/getbootstrap_js.jpg" alt="">
+                      <div class="carousel-caption" style="background-color: rgba(50,50,50,0.7);">
+                        <h2>JavaScript</h2><p>JavaScriptについて解説したページ</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#c1" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#c1" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div><!--div carousel -->
+            </div>
+            <pre class="code">
+              <code>
+                <span>
+                  &lt;div id=&quot;c1&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+                    &lt;ol class=&quot;carousel-indicators&quot;&gt;
+                      &lt;li data-target=&quot;#c1&quot; data-slide-to=&quot;0&quot; class=&quot;acrive&quot;&gt;&lt;/li&gt;
+                      &lt;li data-target=&quot;#c1&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+                      &lt;li data-target=&quot;#c1&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+                      &lt;li data-target=&quot;#c1&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+                    &lt;/ol&gt;
+                    &lt;!-- Wrapper for slides --&gt;
+                    &lt;div class=&quot;carousel-inner&quot;&gt;
+                      &lt;!-- 1枚目のスライド --&gt;
+                      &lt;div class=&quot;item active&quot;&gt;
+                        &lt;a href=&quot;http://getbootstrap.com/&quot;&gt;
+                          &lt;img src=&quot;img/getbootstrap.jpg&quot; alt=&quot;&quot;&gt;
+                          &lt;div class=&quot;carousel-caption&quot; style=&quot;background-color: rgba(50,50,50,0.7);&quot;&gt;
+                             &lt;h2&gt;Bootstrap&lt;/h2&gt;&lt;p&gt;Bootstrapの解説サイト&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;!-- 2枚目のスライド --&gt;
+                      &lt;div class=&quot;item&quot;&gt;
+                        &lt;a href=&quot;http://getbootstrap.com/css/&quot;&gt;
+                          &lt;img src=&quot;img/getbootstrap_css.jpg&quot; alt=&quot;&quot;&gt;
+                          &lt;div class=&quot;carousel-caption&quot; style=&quot;background-color: rgba(50,50,50,0.7);&quot;&gt;
+                            &lt;h2&gt;CSS&lt;/h2&gt;&lt;p&gt;CSSについて解説したページ&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;!-- 3枚目のスライド --&gt;
+                      &lt;div class=&quot;item&quot;&gt;
+                        &lt;a href=&quot;http://getbootstrap.com/components/&quot;&gt;
+                          &lt;img src=&quot;img/getbootstrap_components.jpg&quot; alt=&quot;&quot;&gt;
+                          &lt;div class=&quot;carousel-caption&quot; style=&quot;background-color: rgba(50,50,50,0.7);&quot;&gt;
+                            &lt;h2&gt;Components&lt;/h2&gt;&lt;p&gt;コンポーネントを解説したページ&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;!-- 4枚目のスライド --&gt;
+                      &lt;div class=&quot;item&quot;&gt;
+                        &lt;a href=&quot;http://getbootstrap.com/javascript/&quot;&gt;
+                          &lt;img src=&quot;img/getbootstrap_js.jpg&quot; alt=&quot;&quot;&gt;
+                          &lt;div class=&quot;carousel-caption&quot; style=&quot;background-color: rgba(50,50,50,0.7);&quot;&gt;
+                            &lt;h2&gt;JavaScript&lt;/h2&gt;&lt;p&gt;JavaScriptについて解説したページ&lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- Controls --&gt;
+                    &lt;a class=&quot;left carousel-control&quot; href=&quot;#c1&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+                      &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                      &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;a class=&quot;right carousel-control&quot; href=&quot;#c1&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+                      &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+                      &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+                    &lt;/a&gt;
+                  &lt;/div&gt;&lt;!--div carousel --&gt;
+                </span>
+              </code>
+            </pre>
+          </section>
+
           <section class="sec-child" id="">
             <h3></h3>
             <div class="preview">
